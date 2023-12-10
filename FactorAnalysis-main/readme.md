@@ -1,4 +1,5 @@
 UNSUPERVISED MACHINE LEARNING: Factor Analysis and PCA
+MBA USP/ESAQL 
 
 > When to apply the factor analysis?
 
@@ -23,7 +24,7 @@ models
 > [!NOTE]
 > R project: Análise Fatorial PCA.Rproj
 >
-> Datasets : Factor_Grades.xlsx (Grades)
+> Datasets : Factor_Grades.xlsx (Grades/)
 >
-> Scripts: Script_FactGrades.R (Grades)
+> Scripts: Script_FactGrades.R (Grades/)
 
