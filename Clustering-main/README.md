@@ -17,10 +17,11 @@ groups
 > Non-Hierarchical K-means Method
 >
 > • The quantity of cluster that will be formed is defined a priori.
->
+
+
 >  [!NOTE]
 > R project: Análise de Cluster.Rproj
->
+> 
 > Folders:(BinarySearch/),  (CountryData/),(CreditCardCustomerData/),(RegionalRetail/),Vestibular.RData(VestibularData/)
 
 
