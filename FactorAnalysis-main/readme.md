@@ -18,3 +18,5 @@ Objectives:
 
 • Creation of orthogonal factors among them and subsequent to the use in supervised
 models
+
+> R project: Análise Fatorial PCA.Rproj
