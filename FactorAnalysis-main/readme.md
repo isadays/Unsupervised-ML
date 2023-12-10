@@ -22,4 +22,6 @@ models
 --------------------
 > [!NOTE]
 > R project: Análise Fatorial PCA.Rproj
+> Datasets : Factor_Grades.xlsx (Grades)
+> Scripts: Script_FactGrades.R (Grades)
 
