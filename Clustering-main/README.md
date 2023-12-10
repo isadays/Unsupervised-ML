@@ -22,7 +22,8 @@ groups
 > R project: Análise de Cluster.Rproj
 >
 > Folders:(BinarySearch/),  (CountryData/),(CreditCardCustomerData/),(RegionalRetail/),Vestibular.RData(VestibularData/)
-> 
+
+
 > [!IMPORTANT]
 >Content: dataset and script
 
