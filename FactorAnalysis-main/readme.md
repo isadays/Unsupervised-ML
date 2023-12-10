@@ -1,5 +1,7 @@
-UNSUPERVISED MACHINE LEARNING: Factor Analysis and PCA
-MBA USP/ESAQL 
+> [!IMPORTANT]
+>UNSUPERVISED MACHINE LEARNING: Factor Analysis and PCA
+>
+>MBA USP/ESAQL 
 
 > When to apply the factor analysis?
 
