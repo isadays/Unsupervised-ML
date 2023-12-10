@@ -21,8 +21,19 @@ groups
 >  [!NOTE]
 > R project: Análise de Cluster.Rproj
 >
-> Datasets : BinarySearch.RData (BinarySearch/),datacountries.csv (CountryData/),creditcard.csv(CreditCardCustomerData/), RegionalRetail.RData (RegionalRetail/),Vestibular.RData(VestibularData/)
->
-> Scripts: Script_BinarySearch.R (BinarySearch/), Script_Countries.R, Script_customerdata.R, Script_RegionalRetail.R (RegionalRetail/),SCRIPT-Vestibular.R(VestibularData/)
+> Folders:(BinarySearch/),  (CountryData/),(CreditCardCustomerData/),(RegionalRetail/),Vestibular.RData(VestibularData/)
+> 
+> [!IMPORTANT]
+>Content: dataset and script
 
+ 
+> BinarySearch/: BinarySearch.RData and Script_BinarySearch.R
+>
+> CountryData/: datacountries.csv and Script_Countries.R
+>
+>CreditCardCustomerData/:  creditcard.csv and Script_customerdata.R
+>
+>  RegionalRetail/: RegionalRetail.RData and Script_RegionalRetail.R
+>
+> VestibularData/:Vestibular.RData and SCRIPT-Vestibular.R
 
