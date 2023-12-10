@@ -6,7 +6,9 @@ UNSUPERVISED MACHINE LEARNING: Factor Analysis and PCA
 • When the variables are metrics: it depends on the correlations between
 variables
 
-• This is the grouping of the variables into factors. The objectives can be:
+• This is the grouping of the variables into factors. 
+
+Objectives:
 
 • Obtain the behavior of the set of variables, combining them for structural reduction
 
