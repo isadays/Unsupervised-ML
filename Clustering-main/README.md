@@ -19,10 +19,10 @@ groups
 > • The quantity of cluster that will be formed is defined a priori.
 >
 >  [!NOTE]
-> R project: Análise Fatorial PCA.Rproj
+> R project: Análise de Cluster.Rproj
 >
-> Datasets : Factor_Grades.xlsx (Grades/)
+> Datasets : BinarySearch.RData (BinarySearch/),datacountries.csv (CountryData/),creditcard.csv(CreditCardCustomerData/), RegionalRetail.RData (RegionalRetail/),Vestibular.RData(VestibularData/)
 >
-> Scripts: Script_FactGrades.R (Grades/)
+> Scripts: Script_BinarySearch.R (BinarySearch/), Script_Countries.R, Script_customerdata.R, Script_RegionalRetail.R (RegionalRetail/),SCRIPT-Vestibular.R(VestibularData/)
 
 
