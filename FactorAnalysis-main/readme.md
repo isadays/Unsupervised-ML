@@ -1,6 +1,8 @@
 UNSUPERVISED MACHINE LEARNING: Factor Analysis and PCA
 
 > When to apply the factor analysis?
+
+
 • When the variables are metrics: it depends on the correlations between
 variables
 
