@@ -24,3 +24,5 @@ process previously
 >
 > • If new observations are added to the database, it is appropriate to do the analysis
 again
+
+Análise de Correspondência.Rproj
