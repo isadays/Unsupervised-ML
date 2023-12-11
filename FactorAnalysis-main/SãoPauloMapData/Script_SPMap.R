@@ -2,7 +2,7 @@
 
 # Course: MBA DSA (USP ESALQ)
 # Prof. Wilson Tarantin Jr.
-
+#Isabela Pereira Lima Dias
 #Load packages
 
 set_packages <-  c("tidyverse","ggrepel","reshape2","knitr","kableExtra", 
@@ -22,9 +22,9 @@ load(file="atlasambiental.RData")
 #Database environmental atlas
 atlasambiental %>% 
   kable() %>%
-  kable_styling(bootstrap_options = "striped", 
-                full_width = TRUE, 
-                font_size = 12)
+  kableExtra::kable_styling(bootstrap_options = "striped", 
+                            full_width = FALSE,
+                            font_size = 14)
 summary(atlasambiental[,3:11])
 
 rho <- cor(atlasambiental[,3:11])
@@ -143,6 +143,8 @@ atlasambiental[,c(2, 14)] %>%
 
 #Spatial visualization
 load(file="mapa_sp.RData")
+remotes::install_github('r-tmap/tmap')
+library(tmap)
 tm_shape(mapa_sp)+ tm_borders()
 
 mapa_sp@data$COD_DIST <- as.numeric(mapa_sp@data$COD_DIST)
@@ -155,8 +157,9 @@ data_district <- merge(mapa_sp,
 
 tmap_mode("view")  
 
+
 tm_shape(data_district) +
-  tm_fill("punctuation", midpoint = 0, palette = "RdBu", 
+  tm_fill("pontuacao", midpoint = 0, palette = "RdBu", 
           style = "quantile", n = 10, legend.show = T) +
   tm_borders(alpha = 0.8) +
-  tm_text("distrits")
+  tm_text("districts")
