@@ -165,5 +165,77 @@ countries <- bind_cols(countries,
                     "factor_2" = factors_$PC2,
                     "factor_3" = factors_$PC3)
 
-#Clustering 
+#Clustering  average 0 and standard deviation 1
 summary(countries[,11:13])
+sd(countries[,11])
+sd(countries[,12])
+sd(countries[,13])
+
+#Dissimilarity matrix
+matrix_D <- countries[,11:13] %>% dist(method= "euclidean")
+#complete linkage
+cluster_hier <- agnes(x=matrix_D,method = "complete")
+
+# Distances
+coeff <-sort(cluster_hier$height,decreasing = FALSE)
+coeff
+
+schema <- as.data.frame(cbind(cluster_hier$merge,coeff))
+names(schema) <-c("Cluster1","Cluster2", "Coefficients")
+
+#Dendrogram
+dev.off()
+fviz_dend(x=cluster_hier,show_labels = FALSE)
+#10 clusters
+fviz_dend(x = cluster_hier,
+          h = 3.0,
+          show_labels = FALSE,
+          color_labels_by_k = F,
+          rect = F,
+          rect_fill = F,
+          ggtheme = theme_bw())
+#categorical variable cluster_H
+countries$cluster_H <- factor(cutree(tree = cluster_hier, k = 10))
+#Fit an Analysis of Variance Model
+
+# vanalys1
+summary(vanalys1 <- aov(formula = factor_1 ~ cluster_H,
+                             data = countries))
+
+# vanalys2
+summary(vanalys2 <- aov(formula = factor_2 ~ cluster_H,
+                             data = countries))
+
+# vanalys3
+summary(vanalys3 <- aov(formula = factor_3 ~ cluster_H,
+                             data = countries))
+
+
+# gdpp
+group_by(countries, cluster_H) %>%
+  summarise(
+    mean = mean(gdpp, na.rm = TRUE),
+    sd = sd(gdpp, na.rm = TRUE),
+    min = min(gdpp, na.rm = TRUE),
+    max = max(gdpp, na.rm = TRUE),
+    obs = n())
+
+# health
+group_by(countries, cluster_H) %>%
+  summarise(
+    mean = mean(health, na.rm = TRUE),
+    sd = sd(health, na.rm = TRUE),
+    min = min(health, na.rm = TRUE),
+    max = max(health, na.rm = TRUE),
+    obs = n())
+
+# life_expec
+group_by(countries, cluster_H) %>%
+  summarise(
+    mean = mean(life_expec, na.rm = TRUE),
+    sd = sd(life_expec, na.rm = TRUE),
+    min = min(life_expec, na.rm = TRUE),
+    max = max(life_expec, na.rm = TRUE),
+    obs = n())
+
+
